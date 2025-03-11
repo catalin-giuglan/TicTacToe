@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+### TicTacToe Minigame
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The TicTacToe minigame is a React-based implementation that allows two players to compete in a classic TicTacToe game. The game includes features such as score tracking, player name customization, and the ability to reset the board and scores. 
 
-## Available Scripts
+#### Functionality:
 
-In the project directory, you can run:
+- **Player Setup:** Players can enter their names before starting the game. If no names are provided, default names "Player 1" and "Player 2" are used.
+- **Game Start:** The game begins when the "Play" button is pressed. The game board is displayed, and players take turns marking their symbols (X or O) on the board.
+- **Winner Determination:** The game detects when a player has won and displays the winner's name. The score for the winning player is updated.
+- **Reset Functions:** Players can reset the game board or reset the scores using the provided buttons.
 
-### `npm start`
+#### Key Components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **App.js:** The main component that manages the game's state, including players' names, scores, and the active section (home or gameStarted).
+- **Board.js:** The component responsible for rendering the game board and handling the logic for player moves and determining the winner.
+- **Info.js:** The component that displays the current scores and player names.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies Used
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React:** The primary library used for building the user interface.
+- **React Scripts:** Provides a set of scripts to run, build, and test the application.
+- **Testing Libraries:** Includes libraries such as @testing-library/react for testing the application's components.
+- **CSS:** Custom styles for the application are defined in CSS files.
