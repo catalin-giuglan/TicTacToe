@@ -1,0 +1,65 @@
+/* Filename - css/board.css */
+
+:root {
+    --board-background: none;
+    --border-color: #61dafb;
+    --border-thickness: 5px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .board {
+    position: relative;
+    width: 80vmin; /* Use viewport-relative units */
+    height: 80vmin; /* Use viewport-relative units */
+    max-width: 600px; /* Set a max width for larger screens */
+    max-height: 600px; /* Set a max height for larger screens */
+    margin: 0 auto;
+    background-color: var(--board-background);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a 3x3 grid */
+    grid-template-rows: repeat(3, 1fr); /* Create a 3x3 grid */
+  }
+  
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    border: var(--border-thickness) dashed var(--border-color);
+  }
+
+  .input:hover {
+    background-color: #3a3f4a; /* Slightly brighter shade of grey than #282c34 */
+    cursor: pointer;
+    transition: 200ms;
+  }
+  
+  .input:nth-child(1),
+  .input:nth-child(2),
+  .input:nth-child(4),
+  .input:nth-child(5) {
+    border-right: var(--border-thickness) dashed var(--border-color);
+    border-bottom: var(--border-thickness) dashed var(--border-color);
+  }
+  
+  .input:nth-child(3),
+  .input:nth-child(6) {
+    border-bottom: var(--border-thickness) dashed var(--border-color);
+  }
+  
+  .input:nth-child(7),
+  .input:nth-child(8) {
+    border-right: var(--border-thickness) dashed var(--border-color);
+  }
+  
+  

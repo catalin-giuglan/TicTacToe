@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-hover infinite 1.5s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-hover {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.play-button {
+  background-color: #61dafb;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 40px;
+  transition: background-color 0.3s;
+}
+
+.play-button:hover {
+  background-color: #4fa8d8;
+}
+
+.reset-scores {
+  background-color: #f6546a;
+}
+
+.reset-scores:hover {
+  background-color: #e04057;
+}
+
+.App-intro {
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+}
+
+.winner-text {
+  font-size: 50px;
+  font-style: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+.player-names-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.player-name-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.player-name-input input {
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: 2px solid #61dafb;
+  background-color: #1e2127;
+  color: white;
+  font-size: 16px;
+  width: 200px;
+}
+
+.player-name-input input:focus {
+  outline: none;
+  border-color: #4fa8d8;
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.3);
+}
+
+.name-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
+.player-name-input label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.game-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
