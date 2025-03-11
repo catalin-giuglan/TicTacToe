@@ -1,21 +1,23 @@
-### TicTacToe Minigame
+# TicTacToe Minigame
+
+## Description
 
 The TicTacToe minigame is a React-based implementation that allows two players to compete in a classic TicTacToe game. The game includes features such as score tracking, player name customization, and the ability to reset the board and scores.
 
-#### Features
+## Features
 
 - **Player Setup:** Players can enter their names before starting the game. If no names are provided, default names "Player 1" and "Player 2" are used.
 - **Game Start:** The game begins when the "Play" button is pressed. The game board is displayed, and players take turns marking their symbols (X or O) on the board.
 - **Winner Determination:** The game detects when a player has won and displays the winner's name. The score for the winning player is updated.
 - **Reset Functions:** Players can reset the game board or reset the scores using the provided buttons.
 
-#### Key Components
+## Key Components
 
 - **App.js:** Manages the game's state, including players' names, scores, and the active section (home or gameStarted).
 - **Board.js:** Renders the game board and handles the logic for player moves and winner determination.
 - **Info.js:** Displays the current scores and player names.
 
-### Technologies Used
+## Technologies Used
 
 - **React:** The primary library used for building the user interface.
 - **React Scripts:** Provides a set of scripts to run, build, and test the application.
